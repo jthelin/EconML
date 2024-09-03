@@ -113,7 +113,7 @@ jobs:
         name: Ensure latest pip and setuptools
       - run: pip install twine
         name: Install twine
-      - uses: actions/download-artifact@v3
+      - uses: actions/download-artifact@v4.1.7
         name: Download wheels and sdist
         with:
           name: dist
